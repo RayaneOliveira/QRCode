@@ -34,15 +34,14 @@ public class MainActivity extends Activity {
                 	
                 	Toast.makeText(this, "Código: " + result, Toast.LENGTH_LONG).show();
                 	
-                	TextView textView = (TextView) findViewById(R.id.textResultado);
-                    textView.setText(result);
+                	TextView textResult = (TextView) findViewById(R.id.textResultado);
+                    textResult.setText(result);
                 	
                 } else {
                 	
                 	Toast.makeText(getBaseContext(), "Código inválido ou inexistente.", Toast.LENGTH_LONG).show();
                 }
                 break;
-            default:
         }
     }
 }
